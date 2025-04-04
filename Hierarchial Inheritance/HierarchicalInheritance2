@@ -1,0 +1,27 @@
+class Vehicle {
+    Vehicle() {
+        System.out.println("A vehicle is created");
+    }
+}
+
+// Child class 1
+class Car extends Vehicle {
+    Car() {
+        System.out.println("A car is created");
+    }
+}
+
+// Child class 2
+class Bike extends Vehicle {
+    Bike() {
+        System.out.println("A bike is created");
+    }
+}
+
+// Main class
+public class HierarchicalInheritance2 {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        Bike myBike = new Bike();
+    }
+}
