@@ -1,0 +1,33 @@
+class Animal {
+    void makeSound() {
+        System.out.println("Animals make sounds");
+    }
+}
+
+// Child class 1
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks: Woof! Woof!");
+    }
+}
+
+// Child class 2
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat meows: Meow! Meow!");
+    }
+}
+
+// Main class
+public class HierarchicalInheritance1 {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        Cat myCat = new Cat();
+
+        myDog.makeSound(); // From parent class
+        myDog.bark();      // From Dog class
+
+        myCat.makeSound(); // From parent class
+        myCat.meow();      // From Cat class
+    }
+}
