@@ -1,0 +1,26 @@
+class Person {
+    Person() {
+        System.out.println("A person is created");
+    }
+}
+
+// Intermediate class
+class Employee extends Person {
+    Employee() {
+        System.out.println("An employee is created");
+    }
+}
+
+// Derived class
+class Manager extends Employee {
+    Manager() {
+        System.out.println("A manager is created");
+    }
+}
+
+// Main class
+public class MultilevelInheritance2 {
+    public static void main(String[] args) {
+        Manager m = new Manager();
+    }
+}
